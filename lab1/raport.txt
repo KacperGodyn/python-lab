@@ -1,0 +1,10 @@
+4 - srednia ocen
+
+uczniowie z najwyzsza ocena:
+John: (5)
+Michael: (5)
+Sarah: (5)
+Elizabeth: (5)
+William: (5)
+Charles: (5)
+Christopher: (5)
