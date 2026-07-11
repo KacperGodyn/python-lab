@@ -1,0 +1,15 @@
+[
+    {
+        "timestamp": "2026-07-11 18:41:09",
+        "command": "fast-translate -t otwórzcie wrota nędzni komandosi",
+        "arguments": {
+            "text": "otwórzcie wrota nędzni komandosi",
+            "list": false,
+            "source": "auto",
+            "target": "en"
+        },
+        "result": {
+            "translated_text": "open the gate, you poor commandos"
+        }
+    }
+]
