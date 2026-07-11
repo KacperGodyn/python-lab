@@ -1,70 +1,79 @@
 [
-  {
-    "timestamp": "2026-07-11 17:49:07",
-    "command": "fast-translate -ls",
-    "arguments": {
-      "list": true,
-      "source": "auto",
-      "target": "en"
+    {
+        "timestamp": "2026-07-11 18:21:14",
+        "command": "fast-translate -ls",
+        "arguments": {
+            "list": true,
+            "source": "auto",
+            "target": "en"
+        },
+        "result": {
+            "available_languages": [
+                "de",
+                "en",
+                "es",
+                "fr",
+                "pl"
+            ]
+        }
     },
-    "result": {
-      "available_languages": ["de", "en", "es", "fr", "pl"]
-    }
-  },
-  {
-    "timestamp": "2026-07-11 17:49:08",
-    "command": "fast-translate -t Czesc! -src pl -tg en -alt 3",
-    "arguments": {
-      "text": "Czesc!",
-      "list": false,
-      "source": "pl",
-      "target": "en",
-      "alternative": 3
+    {
+        "timestamp": "2026-07-11 18:21:15",
+        "command": "fast-translate -t Czesc! -src pl -tg en -alt 3",
+        "arguments": {
+            "text": "Czesc!",
+            "list": false,
+            "source": "pl",
+            "target": "en",
+            "alternative": 3
+        },
+        "result": {
+            "translated_text": "Hello!",
+            "alternatives": [
+                "Hey!",
+                "Hi!"
+            ]
+        }
     },
-    "result": {
-      "translated_text": "Hello!",
-      "alternatives": ["Hey!", "Hi!"]
-    }
-  },
-  {
-    "timestamp": "2026-07-11 17:49:08",
-    "command": "fast-translate -t Jak się masz?",
-    "arguments": {
-      "text": "Jak się masz?",
-      "list": false,
-      "source": "auto",
-      "target": "en"
+    {
+        "timestamp": "2026-07-11 18:21:15",
+        "command": "fast-translate -t Jak się masz?",
+        "arguments": {
+            "text": "Jak się masz?",
+            "list": false,
+            "source": "auto",
+            "target": "en"
+        },
+        "result": {
+            "translated_text": "How are you?"
+        }
     },
-    "result": {
-      "translated_text": "How are you?"
-    }
-  },
-  {
-    "timestamp": "2026-07-11 17:49:09",
-    "command": "fast-translate -d Hello",
-    "arguments": {
-      "list": false,
-      "source": "auto",
-      "target": "en",
-      "detect": "Hello"
+    {
+        "timestamp": "2026-07-11 18:21:16",
+        "command": "fast-translate -d Hello",
+        "arguments": {
+            "list": false,
+            "source": "auto",
+            "target": "en",
+            "detect": "Hello"
+        },
+        "result": {
+            "detected_language": "en",
+            "confidence": 45.0
+        }
     },
-    "result": {
-      "detected_language": "en",
-      "confidence": 45.0
+    {
+        "timestamp": "2026-07-11 18:21:17",
+        "command": "fast-translate -f .\\test_text_en.txt -tg es",
+        "arguments": {
+            "file": ".\\test_text_en.txt",
+            "list": false,
+            "source": "auto",
+            "target": "es"
+        },
+        "result": {
+            "saved_file": ".\\test_text_en_translated_es.txt",
+            "status": "success"
+        }
     }
-  },
-  {
-    "timestamp": "2026-07-11 17:49:09",
-    "command": "fast-translate -f .\\test_text_en.txt -tg es",
-    "arguments": {
-      "file": ".\\test_text_en.txt",
-      "list": false,
-      "source": "auto",
-      "target": "es"
-    },
-    "result": {
-      "saved_file": ".\\test_text_en_translated_es.txt",
-      "status": "success"
-    }
-  }
 ]

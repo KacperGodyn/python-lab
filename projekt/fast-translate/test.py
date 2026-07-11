@@ -47,7 +47,7 @@ def test_translation_pl_to_en_with_alternatives(capsys):
     run()
     captured = capsys.readouterr()
     with capsys.disabled():
-        print("\nTest tłumaczenia PL na EN z trzema alternatywnymi tłumaczeniami:")
+        print("\nTest tłumaczenia PL na EN z dwoma alternatywnymi tłumaczeniami:")
         print(captured.out.strip())
     assert "Alternatywne tłumaczenia:" in captured.out
 
